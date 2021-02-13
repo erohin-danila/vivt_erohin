@@ -27,13 +27,13 @@
            <div class="vhod-input">
             <input type="text" class="vvod" placeholder="Имя пользователя">
             <input type="text" class="vvod" placeholder="Пароль"> 
-            <button class=" close2" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';">Авторизоваться</button>      
+            <button class=" close2" title="Закрыть"   onclick="Remove(); document.getElementById('overlay').style.display='none';">Авторизоваться</button>      
            </div>      
            
             <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
         </div>
     </div>
-
+    
 
     <div class="container">
         <!-- шапка -->
@@ -50,7 +50,7 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="menu header__menu">
-                        <li><a href="" class="menu__item">Главная</a></li>
+                        <li><a href="турник.html" class="menu__item">Главная</a></li>
                         <li><a href="" class="menu__item">Сотрудники</a></li>
                         <li><a href="" class="menu__item">Общие отчеты</a></li>
                     </ul>
@@ -111,10 +111,17 @@
         }
       </script>
       <!-- скрипт для входа -->
-<script type="text/javascript">
-  var delay_popup = 5;
-  setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
-</script>
+      <script type="text/javascript">
+      // таймаут перед появлением
+        var delay_popup = 5;
+        setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+        // добавление класса 
+        document.body.classList.add('fixed-page');
+        // функция, убирающая класс
+         function  Remove(){
+          document.body.classList.remove('fixed-page');
+        }
+      </script>
       <!-- остальные скрипты -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/burger.js"></script> 

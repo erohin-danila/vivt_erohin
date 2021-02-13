@@ -280,7 +280,9 @@ a{
     width: 95%;
     opacity: 0.5;
 }
-
+.fixed-page{
+  overflow: hidden; /*запрещаем прокручивание страницы при открытом меню*/
+}
 
 /* адаптив */
 @media screen and (max-width:750px) {
@@ -322,7 +324,5 @@ a{
     .header__nav.open-menu {
         left: 0;
     }
-    .fixed-page{
-        overflow: hidden; /*запрещаем прокручивание страницы при открытом меню*/
-    }
+   
 }
