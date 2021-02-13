@@ -71,44 +71,15 @@ html{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container{
     width: 100%;
     margin: auto;
     
 }
+/* шапка */
 .container-head{
-    background-color: #53e597;
+    background: rgb(59,215,33);
+background: linear-gradient(90deg, rgba(59,215,33,1) 0%, rgba(9,121,31,0.3561799719887955) 81%, rgba(0,212,255,1) 100%);
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -148,7 +119,7 @@ a{
 .header__menu li {
     list-style: none;
     margin: 0px 0px 0px 36px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     text-decoration: none;
 }
