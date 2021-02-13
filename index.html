@@ -5,11 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/tags-icon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <title>ВИВТ</title>
 </head>
 <body>
+
+   <!-- предзагрузка -->
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
     <div class="container">
+        <!-- шапка -->
       <div class="container-head">
         <header class="head">
             <a href="index.html">
@@ -41,6 +62,8 @@
 
 
     </div>
+
+    <!-- контент -->
     <div class="content">
         <br>
         <br>
@@ -71,6 +94,17 @@
 
 Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Разнообразный и богатый опыт консультация с широким активом в значительной степени обуславливает создание систем массового участия. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требуют определения и уточнения форм развития.
     </div>
+    <!-- скрипт для загрузки -->
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+      <!-- остальные скрипты -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/burger.js"></script> 
 </body>
