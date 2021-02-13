@@ -20,13 +20,19 @@
       </div>
     
 
-
-
-
-
-
-
-
+<!-- вход -->
+      <div id="overlay">
+        <div class="popup">
+           <center> <h2 class="vhod-sag">Войдите в свой аккаунт</h2></center>
+           <div class="vhod-input">
+            <input type="text" class="vvod" placeholder="Имя пользователя">
+            <input type="text" class="vvod" placeholder="Пароль"> 
+            <button class=" close2" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';">Авторизоваться</button>      
+           </div>      
+           
+            <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+        </div>
+    </div>
 
 
     <div class="container">
@@ -104,7 +110,11 @@
           }, 500);
         }
       </script>
-
+      <!-- скрипт для входа -->
+<script type="text/javascript">
+  var delay_popup = 5;
+  setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+</script>
       <!-- остальные скрипты -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/burger.js"></script> 
