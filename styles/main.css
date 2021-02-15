@@ -87,11 +87,7 @@ html{
   height: 100%;
   background: gray;
   z-index: 999;
-  -webkit-animation: fade .6s;
-  -moz-animation: fade .6s;
-  animation: fade .6s;
   overflow: auto;
-  
 }
 /* блок входа */
 .popup {
@@ -117,9 +113,6 @@ html{
   -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
   -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
   box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-  -webkit-animation: fade .6s;
-  -moz-animation: fade .6s;
-  animation: fade .6s;
 }
 .close {
   top: 10px;
@@ -162,7 +155,6 @@ html{
   margin-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
- 
 }
 
 .close2{
@@ -238,7 +230,7 @@ a{
     -moz-text-shadow:1px 0px 0 rgb(213,213,213),2px 0px 0 rgb(170,170,170),3px 0px 0 rgb(128,128,128),4px 0px 0 rgb(85,85,85),5px 0px 0 rgb(43,43,43),6px 0px 1px rgba(0,0,0,0);
     color:#ffffff;
     font-size:1.5REM;
-    margin-right: 5.9vw;
+    margin-right: 3vw;
   }
   .header__menu {
     display: flex;
@@ -272,17 +264,55 @@ a{
 .menu-burger__header{
     display: none;
 }
-
+/* контент */
 .content{
-    height: 2000px;
-    margin:auto;
-    height: 2000px;
     width: 95%;
-    opacity: 0.5;
+    margin: auto;
+    padding-top: 70px;
+    display: flex;
+   justify-content: space-between;
+    
 }
+
+.left_info{
+  width: 30%;
+  min-width: 330px;
+  height: 85vh;
+  
+  
+}
+
+.right_info
+{
+  width: 68%;
+  height: 85vh;
+  background-color: green;
+ 
+}
+
 .fixed-page{
-  overflow: hidden; /*запрещаем прокручивание страницы при открытом меню*/
+  overflow: hidden; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* адаптив */
 @media screen and (max-width:750px) {
@@ -324,5 +354,14 @@ a{
     .header__nav.open-menu {
         left: 0;
     }
-   
+    .left_info{
+      width: 95%;
+      margin: auto;
+    }
+   .content{
+     flex-wrap: wrap;
+   }
+   .right_info{
+     width: 100%;
+   }
 }
