@@ -6,6 +6,10 @@
 }
 html{
     font-size: 14px;
+    
+}
+body{
+  background-color: #e3e3e3;
 }
 
 /* стили для предзагрузки */
@@ -249,13 +253,20 @@ a{
 }  
 /* пользователь */
 .user{
-    align-items: center;
-    display: flex;
+   display: flex;
+   align-items: center; 
+    cursor: pointer;
 }
 .user-text{
     margin-right: 0.75vw;
 }
-
+.dropdown-content{
+ 
+  top: 50px;
+  right: 2.5%;
+  position: fixed;
+  z-index: 32132;
+}
 .user-img{
     border-radius: 25px;
     margin-right: 10px;
@@ -263,6 +274,10 @@ a{
 
 .menu-burger__header{
     display: none;
+}
+
+.fixed-page{
+  overflow: hidden; 
 }
 /* контент */
 .content{
@@ -274,31 +289,91 @@ a{
     
 }
 
+/* левая информация */
 .left_info{
   width: 30%;
   min-width: 330px;
-  height: 85vh;
-  
-  
+  height: 90vh;
+  background-color: white;
 }
+.left_calendar{
+  margin-top: 5px;
+}
+/* правая информация */
 
 .right_info
 {
   width: 68%;
-  height: 85vh;
-  background-color: green;
+  height: 90vh;
+  background-color: white;
  
 }
 
-.fixed-page{
-  overflow: hidden; 
+.right_head{
+  height: 9%;
+  display: flex;
+  align-items: center;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  justify-content: space-between
+}
+.head_right01{
+  display: flex;
+  height: 80%;
+  align-items: center;
+  width: 40%;
+}
+.head_sag{
+  
+}
+.head_poisk{
+  height: 80%;
+  margin-right: 5%;
+  padding: 5px;
+  width: 90%;
+  background-image: url("../img/poisk.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: right 5px center;
+  outline: none;
+  
+}
+.head_plus{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 35px;
+  height: 80%;
+  border: solid 1px black;
+  justify-content: center;
 }
 
 
 
 
+.dropdown-content {
+ 
+  background-color: #f9f9f9;
+  min-width: 125px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-
+.dropdown-content a {
+  transition: 0.9s;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+.myDropdown{
+  display: none;
+}
+.show{
+  display: block;
+  
+}
 
 
 
@@ -362,6 +437,8 @@ a{
      flex-wrap: wrap;
    }
    .right_info{
-     width: 100%;
+     margin-top: 50px;
+     width: 95%;
+     margin: auto;
    }
 }
