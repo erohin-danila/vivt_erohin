@@ -260,20 +260,34 @@ a{
    display: flex;
    align-items: center; 
     cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .user-text{
     margin-right: 0.75vw;
 }
 .dropdown-content{
- 
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   top: 50px;
-  right: 2.5%;
+  right: 2.3%;
   position: fixed;
-  z-index: 32132;
+  z-index: 321320000;
 }
 .user-img{
     border-radius: 25px;
     margin-right: 10px;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 
 .menu-burger__header{
@@ -371,13 +385,19 @@ a{
   opacity: 0.5;
 }
 .kolonka{
- 
+
   height: 100%;
   display: flex;
   align-items: center;
   padding-left: 1.7%;
   padding-right: 1.7%;
   border-right: solid 2px black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kolonka:hover{
+  overflow: visible;
 }
 .right_table_kolonka_1{
  width: 28%;
@@ -401,11 +421,15 @@ a{
 
 
 .dropdown-content {
- 
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   background-color: #f9f9f9;
   min-width: 125px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000000;
 }
 
 .dropdown-content a {
@@ -417,16 +441,26 @@ a{
   
 }
 .myDropdown{
-  display: none;
+  top: -150px;
 }
 .show{
-  display: block;
-  
+  top: 50px;
 }
 
 
 
-
+.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+       transform: rotate(180deg);
+       -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
 
 
 
@@ -479,21 +513,22 @@ a{
         left: 0;
     }
     .left_info{
-      width: 95%;
+      width: 98vw;
       margin: auto;
     }
    .content{
      flex-wrap: wrap;
+     width: 98v;
    }
    .right_info{
-     margin-top: 50px;
-     width: 95%;
+     width: 98vw;
      margin: auto;
    }
+  
+   
    .left_info{
-     width: 99vw;
-   }
-   .right_info{
-     width: 99vw;
-   }
+     
+    margin-right: 0;
+   
+  }
 }

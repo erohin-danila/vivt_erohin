@@ -9,6 +9,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.user').click(function() {
         $('.dropdown-content').toggleClass('show');
-       
+        $('.user-strelka').toggleClass('rotate');
+     
     });
 });
