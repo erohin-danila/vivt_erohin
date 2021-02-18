@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box; 
 }
+@viewport {
+  min-width: 400px;
+ 
+}
 html{
     font-size: 14px;
     
@@ -295,6 +299,7 @@ a{
   min-width: 330px;
   height: 90vh;
   background-color: white;
+  min-height: 600px;
 }
 .left_calendar{
   margin-top: 5px;
@@ -305,6 +310,7 @@ a{
 {
   width: 68%;
   height: 90vh;
+  min-height: 600px;
   background-color: white;
  
 }
