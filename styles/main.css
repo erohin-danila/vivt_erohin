@@ -300,6 +300,8 @@ a{
   height: 90vh;
   background-color: white;
   min-height: 600px;
+  margin-right: 2vw;
+  border-bottom: solid 10px green;
 }
 .left_calendar{
   margin-top: 5px;
@@ -308,6 +310,7 @@ a{
 
 .right_info
 {
+  border-bottom: solid 10px green;
   width: 68%;
   height: 90vh;
   min-height: 600px;
@@ -354,6 +357,46 @@ a{
   justify-content: center;
 }
 
+/* правая инфа таблица */
+
+.right_table{
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d4d2d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+.kolonka{
+ 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  border-right: solid 2px black;
+}
+.right_table_kolonka_1{
+ width: 28%;
+
+}
+.right_table_kolonka_2{
+  width: 17%;
+ }
+ .right_table_kolonka_3{
+  width: 17%;
+ 
+ }
+ .right_table_kolonka_4{
+  width: 19%;
+ }
+ .right_table_kolonka_5{
+  width: 20%;
+  border: none;
+ }
 
 
 
@@ -446,5 +489,11 @@ a{
      margin-top: 50px;
      width: 95%;
      margin: auto;
+   }
+   .left_info{
+     width: 99vw;
+   }
+   .right_info{
+     width: 99vw;
    }
 }
