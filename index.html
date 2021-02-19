@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/tags-icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/theme2.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <title>ВИВТ</title>
 </head>
@@ -76,17 +75,44 @@
     <!-- контент -->
     <div class="content">
     
-     <div class="left_info">
+      <div class="left_info">
       <!-- блок с календарем -->
-      <div class="left_calendar">
-        <div class="parent">
-          <div class="block">
-            <div id="caleandar">
+       <div class="left_head">
+          <div class="calendar">
+            <img src="img/calendar.png" alt="" class="calendar_img" >
+            <span id="calendar-day">День недели
+            </span>
+            <div class="calendar-date">
+              <span id="doc_time">
+              Дата
+             </span>
+             <span id="das">День недели
+             </span>
             </div>
-          </div>
-         </div>
-      </div>
-     </div>
+           </div>
+       </div>
+       <div class="left-nis">
+         
+            <div class="diagramma">
+              <img src="img/GUID-5E23F5F5-6290-4780-959F-D4E403B4B1EC-display.png" alt="" class="diagramma-img" width="100%">
+            </div>
+            <div class="left_nis_infa">
+              <div class="left_nis_infa_block border1">
+                <span class="nis_text1">20</span>
+                <span class="nis_text2">ПРИШЕЛ</span>
+              </div>
+              <div class="left_nis_infa_block border2">
+                <span class="nis_text1">12</span>
+                <span class="nis_text2">ПРОГУЛЯЛ</span>
+              </div>
+              <div class="left_nis_infa_block border3">
+                <span class="nis_text1">3</span>
+                <span class="nis_text2">ОПОЗДАЛ</span>
+              </div>
+            </div>
+       </div>
+        
+       </div>
     
      <div class="right_info">
         <div class="right_head">
@@ -167,10 +193,10 @@
       </script>
       <!-- остальные скрипты -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- бургер - меню -->
     <script src="js/burger.js"></script> 
 
     <!-- календарь  -->
     <script type="text/javascript" src="js/caleandar.js"></script>
-    <script type="text/javascript" src="js/demo.js"></script>
 </body>
 </html>
