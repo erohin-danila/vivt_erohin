@@ -5,9 +5,79 @@
     box-sizing: border-box; 
 }
 @viewport {
-  min-width: 400px;
- 
+  min-width: 450px;
 }
+/* эффект для логотипа */
+.he-nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+.he-nav a:hover,
+.he-nav a:focus {
+	outline: none;
+}
+.iw-effect-3 a {
+  padding: 5px;
+	color: white;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.iw-effect-3 a::before,
+.iw-effect-3 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.iw-effect-3 a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.iw-effect-3 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+.iw-effect-3 a:hover,
+.iw-effect-3 a:focus {
+	color: #fff;
+}
+.iw-effect-3 a:hover::before,
+.iw-effect-3 a:focus::before,
+.iw-effect-3 a:hover::after,
+.iw-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+
+
 html{
     font-size: 14px;
     color: #444444;
@@ -238,8 +308,9 @@ a{
     -moz-text-shadow:1px 0px 0 rgb(213,213,213),2px 0px 0 rgb(170,170,170),3px 0px 0 rgb(128,128,128),4px 0px 0 rgb(85,85,85),5px 0px 0 rgb(43,43,43),6px 0px 1px rgba(0,0,0,0);
     color:#ffffff;
     font-size:1.5REM;
-    margin-right: 3vw;
+   
   }
+
   .header__menu {
     display: flex;
     position: relative;
@@ -255,6 +326,9 @@ a{
 .header__menu li a{
     color: white;
 }  
+.header__container{
+  margin-left: 3vw;
+}
 /* пользователь */
 .user{
    display: flex;
@@ -304,9 +378,7 @@ a{
     margin: auto;
     padding-top: 70px;
     display: flex;
-   justify-content: space-between;
- 
-    
+   justify-content: space-between;  
 }
 
 /* левая информация */
@@ -350,7 +422,7 @@ margin-left: 15%;
   height: 82%;
 }
 .diagramma{
-  background-image: url(../img/GUID-5E23F5F5-6290-4780-959F-D4E403B4B1EC-display.png);
+  background-image: url(../img/diagramma_digital_art_x4.png);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;
@@ -419,9 +491,7 @@ margin-left: 15%;
   align-items: center;
   width: 40%;
 }
-.head_sag{
-  
-}
+
 .head_poisk{
   height: 80%;
   margin-right: 5%;
@@ -628,7 +698,7 @@ flex-direction: column;
 }
 
 
-
+/* поворот стрелки меню */
 .rotate {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
