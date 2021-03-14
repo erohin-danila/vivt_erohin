@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     margin: 0;
@@ -86,8 +88,6 @@ html{
 }
 body{
   background-color: #e3e3e3;
-
-
 }
 
 /* стили для предзагрузки */
@@ -377,407 +377,11 @@ a{
 /* контент */
 .content{
     width: 95%;
-    height: 95vh;
     margin: auto;
-    padding-top: 70px;
     display: flex;
    justify-content: space-between;  
 }
 
-/* левая информация */
-.left_info{
-  border-radius: 10px;
-  width: 27%;
-  min-width: 330px;
-  height: 100%;
-  background-color: white;
-  min-height: 600px;
-  margin-right: 2vw;
-  border-top: solid 8px rgba(59,215,33,1);
-}
-.left_head{
-  height: 18%;
-  border-bottom: solid 2px #d4d2d2;
-}
-
-.calendar_img{
-  width: 20px;
-  height: 20px;
-  opacity: 0.6;
-}
-#das{
-  opacity: 0.6;
-}
-.calendar{
-  height: 90%;
-width: 60%;
-margin: auto;
-margin-left: 15%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#calendar-day{
-  font-size: 3rem;
-  font-weight: bold;
-}
-.left-nis{
-  height: 82%;
-}
-.diagramma{
-  background-image: url(../img/diagramma_digital_art_x4.png);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: contain;
-  background-position: center;
-  height: 80%;
-  width: 100%;
-  margin-bottom: 1%;
-}
-.left_nis_infa{
-  height: 20%;
-  width: 100%;
-  display: flex;
- 
-}
-.left_nis_infa_block{
-  flex-basis: 34%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  
-}
-.nis_text1{
-  font-size: 1.8rem;
-  margin-bottom: 12px;
-  font-weight: bold;
-}
-.nis_text2{
-  font-size: 1rem;
-  color: rgb(121, 113, 113);
-}
-.border1{
-  border-top: solid 8px green;
-  border-right:solid 2px #d4d2d2;
-}
-.border2{
-  border-top: solid 8px red;
-  border-right:solid 2px #d4d2d2;
-}
-.border3{
-  border-top: solid 8px hsl(65, 100%, 51%);
-}
-/* правая информация */
-
-.right_info
-{
-  border-bottom: solid 8px rgba(59,215,33,1);
-  width: 71%;
-  height: 100%;
-  min-height: 600px;
-  background-color: white;
-}
-
-.right_head{
-  height: 9%;
-  display: flex;
-  align-items: center;
-  padding-left: 1.7%;
-  padding-right: 1.7%;
-  justify-content: space-between
-}
-.head_right01{
-  display: flex;
-  height: 80%;
-  align-items: center;
-  width: 40%;
-}
-
-.head_poisk{
-  height: 80%;
-  margin-right: 5%;
-  padding: 5px;
-  max-height: 40px;
-  width: 90%;
-  background-image: url("../img/poisk.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: right 5px center;
-  outline: none;
-  
-}
-.head_plus{
-  text-align: center;
-  display: flex;
-  max-height: 40px;
-  align-items: center;
-  width: 35px;
-  height: 80%;
-  border: solid 1px black;
-  justify-content: center;
-}
-
-/* правая - кнопки переключения */
-.rabochie-mesta{
-  display: none;
-}
-.smena-button_style{
-  height: 30px;
-  background-color: white;
-  border-radius: 10px;
-  outline: none;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-color: green;
-}
-.smena-button_style:hover{
-  height: 30px;
-  background-color: white;
-  border-radius: 10px;
-  outline: none;
-  padding-left: 5px;
-  padding-right: 5px;
-  transition: all 0.9s ease;
-  background-color: green;
-  color: white;
-}
-.smena-button_style:focus{
-  height: 30px;
-  background-color: white;
-  border-radius: 10px;
-  outline: none;
-  padding-left: 5px;
-  padding-right: 5px;
-  transition: all 0.9s ease;
-  background-color: green;
-  color: white;
-}
-.smena-button{
-  margin-right: 10px;
-
-}
-/* правая инфа таблица */
-
-.right_table{
-  height: 7%;
-  
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #d4d2d2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-}
-.kolonka{
-
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-left: 1.7%;
-  padding-right: 1.7%;
-  border-right: solid 2px black;
-  overflow-wrap: break-word;
-  
-}
-
-.right_table_kolonka_1{
- width: 28%;
-
-}
-.right_table_kolonka_2{
-  width: 17%;
- }
- .right_table_kolonka_3{
-  width: 17%;
- 
- }
- .right_table_kolonka_4{
-  width: 19%;
- }
- .right_table_kolonka_5{
-  width: 20%;
-  border: none;
- }
-
-/* инфа о сотрудниках */
-.right_sotrudniki{
-  height: 75%;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-/* смена блоков */
-.rabochie-mesta{
-  top: 0;
- width: 0;
- position: absolute;
- right: -100%;
- overflow:hidden;
-}
-.rabochie-mesta-visible{
-  display: flex;
-  right: 0;
-  top: 0;
-  position: relative;
-  transition: all 0.5s ease;
-  width: 100%;
-}
-.turniket_vid{
-  display: flex;
-  right: 0;
-  position: relative;
-  transition: all 0.5s ease;
-  width: 100%;
-  
-}
-.turniket_none{
-  display:block;
- position: absolute;
- right: -100%;
- width: 0;
- overflow: hidden;
- 
-}
-.turniket_vid{
-  display: flex;
-  right: 0;
-  position: relative;
-  width: 100%;
-  
-}
-
-
-
-
-.block_sotrudnik{
-  width: 100%;
-  height: 25%;
-  border-bottom: solid 2px #d4d2d2;
-  display: flex;
-}
-
-.sotrudnik_1{
- width: 28%;
- display: flex;
- align-items: center;
- padding-left: 1.7%;
-}
-.text_opacity{
-  opacity: 0.5;
-}
-.sotrudnik_face{
-  width: 50px;
-  height: 50px;
-  min-height: 35px;
-  min-width: 35px;
-  margin-right: 15px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: contain;
-}
-.face1{
-  background-image: url(../img/sotr_01.png);
-}
-.face2{
-  background-image: url(../img/7_oooo.plus.png);
-
-}
-.face3{
-  background-image: url(../img/sotr_03.webp);
-}
-.face4{
-  background-image: url(../img/sotr_04.png);
-}
-
-.sotrudnik_infa{
-display: flex;
-flex-direction: column;
-}
-.sotrudnik_2{
-  width: 17%;
-  display: flex;
- align-items: center;
- padding-left: 1.7%;
-}
-.sotrudnik_3{
-  width: 17%;
-  display: flex;
- align-items: center;
- padding-left: 1.7%;
- }
- .sotrudnik_4{
-  width: 19%;
-  display: flex;
- align-items: center;
- padding-left: 1.7%;
- color: #dbbc1d;
- }
- .sotrudnik_6{
-  width: 19%;
-  display: flex;
- align-items: center;
- padding-left: 1.7%;
-
- }
- .tire{
-   font-size: 40px;
- }
- .sotrudnik_5{
-  width: 20%;
-  display: flex;
- align-items: center;
- padding-left: 1.7%;
- color: red;
- }
- 
- .sotrudnik_7{
-  width: 20%;
-  display: flex;
- align-items: center;
- padding-left: 1.7%;
-
- }
- .alert{
-  color: red;
-   }
- /* низ правой информации*/
- .right_nis{
-   height: 9%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- }
- .right_nis_text{
-   font-size: 1.1rem;
-   opacity: 0.5;
-   padding-left: 1.7%;
-
- }
-.right_nis_button{
-  padding-right: 1.7%;
-}
-.right_nis-zifri{
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-  border-radius: 5px;
-  background-color: white;
-  outline: none;
-}
-.zifri-odin{
-  width: 35px;
-  height: 35px;
-  flex-wrap: nowrap;
-}
-.zifri1{
-  background-color: #d6d6d6;
-  border-radius: 5px;
-}
 .dropdown-content {
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -824,12 +428,6 @@ flex-direction: column;
 .header_nav_size{
   font-size: 2px;
 }
-
-
-
-
-
-
 
 
 /* адаптив */
@@ -915,3 +513,152 @@ flex-direction: column;
   }
 }
 @media (min-width: 500px) {}
+
+
+
+
+/* кабинет */
+.cab
+{
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    height: auto;
+    /* -webkit-box-shadow: 11px 12px 8px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 11px 12px 8px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 11px 12px 8px -2px rgba(0, 0, 0, 0.2); */
+   border: 5px solid greenyellow;
+   padding-bottom: 20px;
+}
+
+.cab-sag-text
+{
+    margin-bottom: 20px;
+}
+
+.cab-sag
+{
+    margin-bottom: 20px;
+}
+
+.cab-infa
+{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.cab-infa-kart-block{
+    width: 18%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background-image: url(../img/cab_sotr.webp);
+    margin-right: 10px;
+    min-width: 200px;
+    flex-shrink: 0;
+    border: 2px solid black;
+    background-position: center;
+  
+}
+.cab-osn-infa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   flex-shrink: 0;
+   margin-right: 10px;
+   min-width: 200px;
+}
+.cab-polosa-text{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.osn-infa-polosa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.cab-infa-text
+{
+   
+    width: 60%;
+}
+.cab-osn-infa{
+    width: 20%;
+}
+.cab-block
+{
+   padding-top: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.polosa
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: gray;
+    opacity: 0.9;
+}
+.vid{
+  background-color: gray;
+  opacity: 0.9;
+}
+.cab-polosa-text
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+.bilet-spisok
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.bilet-sag-text
+{
+margin-top: 10px;
+}
+
+
+.bilet-infa
+{
+    margin-top: 5px;
+    
+}
+@media screen and (max-width:770px){
+    /* .cab-infa-kart-block{
+        display: none;
+    } */
+  .cab-infa-kart-block{
+    width: 45%;
+  }
+  .cab-osn-infa{
+    width: 48%;
+  }
+    .cab-infa-text
+    {
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    .cab{
+        width: 99%;
+  
+    }
+    .cab-block{
+      flex-wrap: wrap;
+    }
+    .cab-infa{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+}
